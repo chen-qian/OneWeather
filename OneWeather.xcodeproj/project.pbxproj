@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BA6FA41D2ED22C003CF9F4 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FA01D2ED22C003CF9F4 /* CityListViewController.m */; };
+		04BA6FA51D2ED22C003CF9F4 /* CityWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FA21D2ED22C003CF9F4 /* CityWeatherViewController.m */; };
+		04BA6FA61D2ED22C003CF9F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FA31D2ED22C003CF9F4 /* main.m */; };
+		04BA6FAC1D2ED245003CF9F4 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FA81D2ED245003CF9F4 /* CityCell.m */; };
+		04BA6FAD1D2ED245003CF9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA6FA91D2ED245003CF9F4 /* Main.storyboard */; };
+		04BA6FAE1D2ED245003CF9F4 /* WeatherForecastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FAB1D2ED245003CF9F4 /* WeatherForecastCell.m */; };
+		04BA6FB51D2ED297003CF9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA6FAF1D2ED297003CF9F4 /* LaunchScreen.storyboard */; };
+		04BA6FB91D2ED2B8003CF9F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FB71D2ED2B8003CF9F4 /* AppDelegate.m */; };
+		04BA6FBA1D2ED2B8003CF9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA6FB81D2ED2B8003CF9F4 /* Assets.xcassets */; };
+		04BA6FD21D2ED2CB003CF9F4 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FBD1D2ED2CB003CF9F4 /* ChineseInclude.m */; };
+		04BA6FD31D2ED2CB003CF9F4 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FBF1D2ED2CB003CF9F4 /* ChineseToPinyinResource.m */; };
+		04BA6FD41D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FC11D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.m */; };
+		04BA6FD51D2ED2CB003CF9F4 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FC41D2ED2CB003CF9F4 /* ChineseString.m */; };
+		04BA6FD61D2ED2CB003CF9F4 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FC51D2ED2CB003CF9F4 /* pinyin.c */; };
+		04BA6FD71D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FC81D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.m */; };
+		04BA6FD81D2ED2CB003CF9F4 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FCA1D2ED2CB003CF9F4 /* PinyinFormatter.m */; };
+		04BA6FD91D2ED2CB003CF9F4 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FCC1D2ED2CB003CF9F4 /* PinYinForObjc.m */; };
+		04BA6FDA1D2ED2CB003CF9F4 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FCE1D2ED2CB003CF9F4 /* PinyinHelper.m */; };
+		04BA6FDB1D2ED2CB003CF9F4 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04BA6FCF1D2ED2CB003CF9F4 /* unicode_to_hanyu_pinyin.txt */; };
+		04BA6FDC1D2ED2CB003CF9F4 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FD11D2ED2CB003CF9F4 /* ZYPinYinSearch.m */; };
+		04BA6FFC1D2ED52D003CF9F4 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FF51D2ED52D003CF9F4 /* AboutViewController.m */; };
+		04BA6FFD1D2ED52D003CF9F4 /* CityAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FF71D2ED52D003CF9F4 /* CityAddViewController.m */; };
+		04BA6FFE1D2ED52D003CF9F4 /* CityLocater.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FF91D2ED52D003CF9F4 /* CityLocater.m */; };
+		04BA6FFF1D2ED52D003CF9F4 /* StatementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA6FFB1D2ED52D003CF9F4 /* StatementViewController.m */; };
+		04BA700B1D2ED581003CF9F4 /* CityWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA70081D2ED581003CF9F4 /* CityWeatherModel.m */; };
+		04BA700C1D2ED581003CF9F4 /* WeatherForecastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA700A1D2ED581003CF9F4 /* WeatherForecastModel.m */; };
+		04BA70111D2ED61C003CF9F4 /* cityId.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BA700E1D2ED61C003CF9F4 /* cityId.plist */; };
+		04BA70141D2EDB37003CF9F4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BA70131D2EDB37003CF9F4 /* Info.plist */; };
+		C9FCF316FED3FE9B6C10D339 /* libPods-OneWeather.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCAD82801CDA1780AE2A31B /* libPods-OneWeather.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BA6F9F1D2ED22C003CF9F4 /* CityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityListViewController.h; path = OneWeather/CityListViewController.h; sourceTree = SOURCE_ROOT; };
+		04BA6FA01D2ED22C003CF9F4 /* CityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityListViewController.m; path = OneWeather/CityListViewController.m; sourceTree = SOURCE_ROOT; };
+		04BA6FA11D2ED22C003CF9F4 /* CityWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityWeatherViewController.h; path = OneWeather/CityWeatherViewController.h; sourceTree = SOURCE_ROOT; };
+		04BA6FA21D2ED22C003CF9F4 /* CityWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityWeatherViewController.m; path = OneWeather/CityWeatherViewController.m; sourceTree = SOURCE_ROOT; };
+		04BA6FA31D2ED22C003CF9F4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OneWeather/main.m; sourceTree = SOURCE_ROOT; };
+		04BA6FA71D2ED245003CF9F4 /* CityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityCell.h; path = OneWeather/CityCell.h; sourceTree = SOURCE_ROOT; };
+		04BA6FA81D2ED245003CF9F4 /* CityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityCell.m; path = OneWeather/CityCell.m; sourceTree = SOURCE_ROOT; };
+		04BA6FA91D2ED245003CF9F4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = OneWeather/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		04BA6FAA1D2ED245003CF9F4 /* WeatherForecastCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherForecastCell.h; path = OneWeather/WeatherForecastCell.h; sourceTree = SOURCE_ROOT; };
+		04BA6FAB1D2ED245003CF9F4 /* WeatherForecastCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherForecastCell.m; path = OneWeather/WeatherForecastCell.m; sourceTree = SOURCE_ROOT; };
+		04BA6FB01D2ED297003CF9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = OneWeather/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		04BA6FB21D2ED297003CF9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = OneWeather/Base.lproj/LaunchScreenController.h; sourceTree = SOURCE_ROOT; };
+		04BA6FB41D2ED297003CF9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = OneWeather/Base.lproj/LaunchScreenController.m; sourceTree = SOURCE_ROOT; };
+		04BA6FB61D2ED2B8003CF9F4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = OneWeather/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		04BA6FB71D2ED2B8003CF9F4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = OneWeather/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		04BA6FB81D2ED2B8003CF9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OneWeather/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		04BA6FBC1D2ED2CB003CF9F4 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		04BA6FBD1D2ED2CB003CF9F4 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		04BA6FBE1D2ED2CB003CF9F4 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		04BA6FBF1D2ED2CB003CF9F4 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		04BA6FC01D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		04BA6FC11D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		04BA6FC31D2ED2CB003CF9F4 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		04BA6FC41D2ED2CB003CF9F4 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		04BA6FC51D2ED2CB003CF9F4 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		04BA6FC61D2ED2CB003CF9F4 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		04BA6FC71D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		04BA6FC81D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		04BA6FC91D2ED2CB003CF9F4 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		04BA6FCA1D2ED2CB003CF9F4 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		04BA6FCB1D2ED2CB003CF9F4 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		04BA6FCC1D2ED2CB003CF9F4 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		04BA6FCD1D2ED2CB003CF9F4 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		04BA6FCE1D2ED2CB003CF9F4 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		04BA6FCF1D2ED2CB003CF9F4 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		04BA6FD01D2ED2CB003CF9F4 /* ZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPinYinSearch.h; sourceTree = "<group>"; };
+		04BA6FD11D2ED2CB003CF9F4 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
+		04BA6FF41D2ED52D003CF9F4 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = OneWeather/AboutViewController.h; sourceTree = SOURCE_ROOT; };
+		04BA6FF51D2ED52D003CF9F4 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = OneWeather/AboutViewController.m; sourceTree = SOURCE_ROOT; };
+		04BA6FF61D2ED52D003CF9F4 /* CityAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityAddViewController.h; path = OneWeather/CityAddViewController.h; sourceTree = SOURCE_ROOT; };
+		04BA6FF71D2ED52D003CF9F4 /* CityAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityAddViewController.m; path = OneWeather/CityAddViewController.m; sourceTree = SOURCE_ROOT; };
+		04BA6FF81D2ED52D003CF9F4 /* CityLocater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityLocater.h; path = OneWeather/CityLocater.h; sourceTree = SOURCE_ROOT; };
+		04BA6FF91D2ED52D003CF9F4 /* CityLocater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityLocater.m; path = OneWeather/CityLocater.m; sourceTree = SOURCE_ROOT; };
+		04BA6FFA1D2ED52D003CF9F4 /* StatementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatementViewController.h; path = OneWeather/StatementViewController.h; sourceTree = SOURCE_ROOT; };
+		04BA6FFB1D2ED52D003CF9F4 /* StatementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatementViewController.m; path = OneWeather/StatementViewController.m; sourceTree = SOURCE_ROOT; };
+		04BA70071D2ED581003CF9F4 /* CityWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityWeatherModel.h; path = OneWeather/CityWeatherModel.h; sourceTree = SOURCE_ROOT; };
+		04BA70081D2ED581003CF9F4 /* CityWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityWeatherModel.m; path = OneWeather/CityWeatherModel.m; sourceTree = SOURCE_ROOT; };
+		04BA70091D2ED581003CF9F4 /* WeatherForecastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherForecastModel.h; path = OneWeather/WeatherForecastModel.h; sourceTree = SOURCE_ROOT; };
+		04BA700A1D2ED581003CF9F4 /* WeatherForecastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherForecastModel.m; path = OneWeather/WeatherForecastModel.m; sourceTree = SOURCE_ROOT; };
+		04BA700E1D2ED61C003CF9F4 /* cityId.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cityId.plist; path = OneWeather/cityId.plist; sourceTree = SOURCE_ROOT; };
+		04BA70131D2EDB37003CF9F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OneWeather/Info.plist; sourceTree = SOURCE_ROOT; };
+		04BF38B41D30351B00C86B9A /* OneWeather-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneWeather-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		04C0D9F51CFEE6D400CAAE66 /* OneWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8D19D92EE8597BF698F4A2 /* Pods-OneWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneWeather/Pods-OneWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A723C44165A8401C2A4C83 /* Pods-OneWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneWeather/Pods-OneWeather.release.xcconfig"; sourceTree = "<group>"; };
+		DFCAD82801CDA1780AE2A31B /* libPods-OneWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04C0D9F21CFEE6D400CAAE66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FCF316FED3FE9B6C10D339 /* libPods-OneWeather.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BA6FBB1D2ED2CB003CF9F4 /* ZYPinYinSearchLib */ = {
+			isa = PBXGroup;
+			children = (
+				04BA6FBC1D2ED2CB003CF9F4 /* ChineseInclude.h */,
+				04BA6FBD1D2ED2CB003CF9F4 /* ChineseInclude.m */,
+				04BA6FBE1D2ED2CB003CF9F4 /* ChineseToPinyinResource.h */,
+				04BA6FBF1D2ED2CB003CF9F4 /* ChineseToPinyinResource.m */,
+				04BA6FC01D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.h */,
+				04BA6FC11D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.m */,
+				04BA6FC21D2ED2CB003CF9F4 /* LetterGroups */,
+				04BA6FC71D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.h */,
+				04BA6FC81D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.m */,
+				04BA6FC91D2ED2CB003CF9F4 /* PinyinFormatter.h */,
+				04BA6FCA1D2ED2CB003CF9F4 /* PinyinFormatter.m */,
+				04BA6FCB1D2ED2CB003CF9F4 /* PinYinForObjc.h */,
+				04BA6FCC1D2ED2CB003CF9F4 /* PinYinForObjc.m */,
+				04BA6FCD1D2ED2CB003CF9F4 /* PinyinHelper.h */,
+				04BA6FCE1D2ED2CB003CF9F4 /* PinyinHelper.m */,
+				04BA6FCF1D2ED2CB003CF9F4 /* unicode_to_hanyu_pinyin.txt */,
+				04BA6FD01D2ED2CB003CF9F4 /* ZYPinYinSearch.h */,
+				04BA6FD11D2ED2CB003CF9F4 /* ZYPinYinSearch.m */,
+			);
+			name = ZYPinYinSearchLib;
+			path = OneWeather/ZYPinYinSearchLib;
+			sourceTree = SOURCE_ROOT;
+		};
+		04BA6FC21D2ED2CB003CF9F4 /* LetterGroups */ = {
+			isa = PBXGroup;
+			children = (
+				04BA6FC31D2ED2CB003CF9F4 /* ChineseString.h */,
+				04BA6FC41D2ED2CB003CF9F4 /* ChineseString.m */,
+				04BA6FC51D2ED2CB003CF9F4 /* pinyin.c */,
+				04BA6FC61D2ED2CB003CF9F4 /* pinyin.h */,
+			);
+			path = LetterGroups;
+			sourceTree = "<group>";
+		};
+		04BA70061D2ED56C003CF9F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04BA70071D2ED581003CF9F4 /* CityWeatherModel.h */,
+				04BA70081D2ED581003CF9F4 /* CityWeatherModel.m */,
+				04BA70091D2ED581003CF9F4 /* WeatherForecastModel.h */,
+				04BA700A1D2ED581003CF9F4 /* WeatherForecastModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04BA700D1D2ED60B003CF9F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04BF38B41D30351B00C86B9A /* OneWeather-Prefix.pch */,
+				04BA70131D2EDB37003CF9F4 /* Info.plist */,
+				04BA700E1D2ED61C003CF9F4 /* cityId.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04C0D9EC1CFEE6D400CAAE66 = {
+			isa = PBXGroup;
+			children = (
+				04C0D9F71CFEE6D400CAAE66 /* OneWeather */,
+				04C0D9F61CFEE6D400CAAE66 /* Products */,
+				5D39D4C3CDE490F0B8660F72 /* Pods */,
+				F7FA34ABA3F1EF7E158AB6C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04C0D9F61CFEE6D400CAAE66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C0D9F51CFEE6D400CAAE66 /* OneWeather.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C0D9F71CFEE6D400CAAE66 /* OneWeather */ = {
+			isa = PBXGroup;
+			children = (
+				04BA6FB81D2ED2B8003CF9F4 /* Assets.xcassets */,
+				04BA700D1D2ED60B003CF9F4 /* Supporting Files */,
+				04BA6FBB1D2ED2CB003CF9F4 /* ZYPinYinSearchLib */,
+				04C5CC561D0D9B820093CD40 /* Base.lproj */,
+				04BA70061D2ED56C003CF9F4 /* Model */,
+				04C2721B1D09742100E04BCB /* View */,
+				04C2721A1D09741E00E04BCB /* Controller */,
+				04BA6FB61D2ED2B8003CF9F4 /* AppDelegate.h */,
+				04BA6FB71D2ED2B8003CF9F4 /* AppDelegate.m */,
+			);
+			name = OneWeather;
+			path = "晴天";
+			sourceTree = "<group>";
+		};
+		04C2721A1D09741E00E04BCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BA6FF41D2ED52D003CF9F4 /* AboutViewController.h */,
+				04BA6FF51D2ED52D003CF9F4 /* AboutViewController.m */,
+				04BA6FF61D2ED52D003CF9F4 /* CityAddViewController.h */,
+				04BA6FF71D2ED52D003CF9F4 /* CityAddViewController.m */,
+				04BA6FF81D2ED52D003CF9F4 /* CityLocater.h */,
+				04BA6FF91D2ED52D003CF9F4 /* CityLocater.m */,
+				04BA6FFA1D2ED52D003CF9F4 /* StatementViewController.h */,
+				04BA6FFB1D2ED52D003CF9F4 /* StatementViewController.m */,
+				04BA6F9F1D2ED22C003CF9F4 /* CityListViewController.h */,
+				04BA6FA01D2ED22C003CF9F4 /* CityListViewController.m */,
+				04BA6FA11D2ED22C003CF9F4 /* CityWeatherViewController.h */,
+				04BA6FA21D2ED22C003CF9F4 /* CityWeatherViewController.m */,
+				04BA6FA31D2ED22C003CF9F4 /* main.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04C2721B1D09742100E04BCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04BA6FA71D2ED245003CF9F4 /* CityCell.h */,
+				04BA6FA81D2ED245003CF9F4 /* CityCell.m */,
+				04BA6FA91D2ED245003CF9F4 /* Main.storyboard */,
+				04BA6FAA1D2ED245003CF9F4 /* WeatherForecastCell.h */,
+				04BA6FAB1D2ED245003CF9F4 /* WeatherForecastCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		04C5CC561D0D9B820093CD40 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				04BA6FAF1D2ED297003CF9F4 /* LaunchScreen.storyboard */,
+				04BA6FB11D2ED297003CF9F4 /* LaunchScreenController.h */,
+				04BA6FB31D2ED297003CF9F4 /* LaunchScreenController.m */,
+			);
+			name = Base.lproj;
+			path = CWeather/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		5D39D4C3CDE490F0B8660F72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C8D19D92EE8597BF698F4A2 /* Pods-OneWeather.debug.xcconfig */,
+				B9A723C44165A8401C2A4C83 /* Pods-OneWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7FA34ABA3F1EF7E158AB6C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFCAD82801CDA1780AE2A31B /* libPods-OneWeather.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04C0D9F41CFEE6D400CAAE66 /* OneWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C0DA0C1CFEE6D400CAAE66 /* Build configuration list for PBXNativeTarget "OneWeather" */;
+			buildPhases = (
+				1A3160007F13C17B92B4AB8E /* 📦 Check Pods Manifest.lock */,
+				04C0D9F11CFEE6D400CAAE66 /* Sources */,
+				04C0D9F21CFEE6D400CAAE66 /* Frameworks */,
+				04C0D9F31CFEE6D400CAAE66 /* Resources */,
+				24C5D0BB2CC6EA9F21B85DE5 /* 📦 Embed Pods Frameworks */,
+				14EEF4273EB62D9A0C542E6F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneWeather;
+			productName = "晴天";
+			productReference = 04C0D9F51CFEE6D400CAAE66 /* OneWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C0D9ED1CFEE6D400CAAE66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.chen;
+				TargetAttributes = {
+					04C0D9F41CFEE6D400CAAE66 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9NS54RRM7B;
+					};
+				};
+			};
+			buildConfigurationList = 04C0D9F01CFEE6D400CAAE66 /* Build configuration list for PBXProject "OneWeather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04C0D9EC1CFEE6D400CAAE66;
+			productRefGroup = 04C0D9F61CFEE6D400CAAE66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04C0D9F41CFEE6D400CAAE66 /* OneWeather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04C0D9F31CFEE6D400CAAE66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA6FAD1D2ED245003CF9F4 /* Main.storyboard in Resources */,
+				04BA6FB51D2ED297003CF9F4 /* LaunchScreen.storyboard in Resources */,
+				04BA70141D2EDB37003CF9F4 /* Info.plist in Resources */,
+				04BA6FBA1D2ED2B8003CF9F4 /* Assets.xcassets in Resources */,
+				04BA6FDB1D2ED2CB003CF9F4 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				04BA70111D2ED61C003CF9F4 /* cityId.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14EEF4273EB62D9A0C542E6F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneWeather/Pods-OneWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A3160007F13C17B92B4AB8E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		24C5D0BB2CC6EA9F21B85DE5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OneWeather/Pods-OneWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04C0D9F11CFEE6D400CAAE66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA6FD51D2ED2CB003CF9F4 /* ChineseString.m in Sources */,
+				04BA6FB91D2ED2B8003CF9F4 /* AppDelegate.m in Sources */,
+				04BA6FFF1D2ED52D003CF9F4 /* StatementViewController.m in Sources */,
+				04BA6FA51D2ED22C003CF9F4 /* CityWeatherViewController.m in Sources */,
+				04BA700B1D2ED581003CF9F4 /* CityWeatherModel.m in Sources */,
+				04BA700C1D2ED581003CF9F4 /* WeatherForecastModel.m in Sources */,
+				04BA6FDA1D2ED2CB003CF9F4 /* PinyinHelper.m in Sources */,
+				04BA6FD71D2ED2CB003CF9F4 /* NSString+PinYin4Cocoa.m in Sources */,
+				04BA6FFD1D2ED52D003CF9F4 /* CityAddViewController.m in Sources */,
+				04BA6FDC1D2ED2CB003CF9F4 /* ZYPinYinSearch.m in Sources */,
+				04BA6FD91D2ED2CB003CF9F4 /* PinYinForObjc.m in Sources */,
+				04BA6FA41D2ED22C003CF9F4 /* CityListViewController.m in Sources */,
+				04BA6FD81D2ED2CB003CF9F4 /* PinyinFormatter.m in Sources */,
+				04BA6FD41D2ED2CB003CF9F4 /* HanyuPinyinOutputFormat.m in Sources */,
+				04BA6FFE1D2ED52D003CF9F4 /* CityLocater.m in Sources */,
+				04BA6FAE1D2ED245003CF9F4 /* WeatherForecastCell.m in Sources */,
+				04BA6FFC1D2ED52D003CF9F4 /* AboutViewController.m in Sources */,
+				04BA6FA61D2ED22C003CF9F4 /* main.m in Sources */,
+				04BA6FD21D2ED2CB003CF9F4 /* ChineseInclude.m in Sources */,
+				04BA6FD61D2ED2CB003CF9F4 /* pinyin.c in Sources */,
+				04BA6FAC1D2ED245003CF9F4 /* CityCell.m in Sources */,
+				04BA6FD31D2ED2CB003CF9F4 /* ChineseToPinyinResource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04BA6FAF1D2ED297003CF9F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA6FB01D2ED297003CF9F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04BA6FB11D2ED297003CF9F4 /* LaunchScreenController.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA6FB21D2ED297003CF9F4 /* Base */,
+			);
+			name = LaunchScreenController.h;
+			sourceTree = "<group>";
+		};
+		04BA6FB31D2ED297003CF9F4 /* LaunchScreenController.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA6FB41D2ED297003CF9F4 /* Base */,
+			);
+			name = LaunchScreenController.m;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04C0DA0A1CFEE6D400CAAE66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04C0DA0B1CFEE6D400CAAE66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04C0DA0D1CFEE6D400CAAE66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C8D19D92EE8597BF698F4A2 /* Pods-OneWeather.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OneWeather-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/OneWeather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.OneWeather;
+				PRODUCT_NAME = OneWeather;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		04C0DA0E1CFEE6D400CAAE66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A723C44165A8401C2A4C83 /* Pods-OneWeather.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OneWeather-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/OneWeather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chen.OneWeather;
+				PRODUCT_NAME = OneWeather;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C0D9F01CFEE6D400CAAE66 /* Build configuration list for PBXProject "OneWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C0DA0A1CFEE6D400CAAE66 /* Debug */,
+				04C0DA0B1CFEE6D400CAAE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C0DA0C1CFEE6D400CAAE66 /* Build configuration list for PBXNativeTarget "OneWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C0DA0D1CFEE6D400CAAE66 /* Debug */,
+				04C0DA0E1CFEE6D400CAAE66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C0D9ED1CFEE6D400CAAE66 /* Project object */;
+}

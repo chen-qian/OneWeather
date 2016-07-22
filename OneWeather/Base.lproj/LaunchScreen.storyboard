@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--LaunchScreem-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenController" title="LaunchScreem" useStoryboardIdentifierAsRestorationIdentifier="YES" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umbrella" translatesAutoresizingMaskIntoConstraints="NO" id="jJB-jE-hEV">
+                                <rect key="frame" x="157" y="147" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1MG-W1-4nE"/>
+                                    <constraint firstAttribute="height" constant="100" id="8k2-CL-QrR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个天气" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnZ-Uf-kh1">
+                                <rect key="frame" x="173" y="257" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="就是一个天气而已" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmL-jl-dwy">
+                                <rect key="frame" x="159" y="440" width="96" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jJB-jE-hEV" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="3cS-sM-auw"/>
+                            <constraint firstItem="WnZ-Uf-kh1" firstAttribute="top" secondItem="jJB-jE-hEV" secondAttribute="bottom" constant="10" id="Axj-tQ-TO8"/>
+                            <constraint firstItem="WnZ-Uf-kh1" firstAttribute="centerX" secondItem="jJB-jE-hEV" secondAttribute="centerX" id="Jcs-V4-4BO"/>
+                            <constraint firstItem="LmL-jl-dwy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="kCq-gq-PhO"/>
+                            <constraint firstItem="LmL-jl-dwy" firstAttribute="centerX" secondItem="WnZ-Uf-kh1" secondAttribute="centerX" id="lLx-iG-UUm"/>
+                            <constraint firstItem="jJB-jE-hEV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rJi-rD-0ww"/>
+                            <constraint firstItem="LmL-jl-dwy" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="0.618" id="vng-mU-aWn"/>
+                            <constraint firstItem="jJB-jE-hEV" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="0.2" id="xQt-ln-KKt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3cS-sM-auw"/>
+                                <exclude reference="kCq-gq-PhO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="umbrella" width="100" height="100"/>
+    </resources>
+</document>
