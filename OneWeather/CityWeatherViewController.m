@@ -11,6 +11,7 @@
 #import "WeatherForecastModel.h"
 #import "WeatherForecastCell.h"
 #import "MJRefresh.h"
+#import <AFNetworking.h>
 #import <AFNetworkReachabilityManager.h>
 
 @interface CityWeatherViewController ()<UITableViewDataSource, UITableViewDelegate>
@@ -76,8 +77,6 @@ BOOL isOpenCell;
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingBlock:^{
         // 进入刷新状态后会自动调用这个block
         [self requestWeatherInfo:self.cityId];
-        [self.dailyForecastTableView.mj_header performSelector:@selector(endRefreshing) withObject:nil afterDelay:1];
-        
     }];
     // 设置文字
     header.lastUpdatedTimeLabel.text = @"上次刷新";
@@ -135,34 +134,46 @@ BOOL isOpenCell;
     NSString *httpUrl = @"https://api.heweather.com/x3/weather?cityid=CN";
     NSString *key =@"&key=411feb273ae249f086d2253d74df5ba7";
     NSString *urlStr = [[NSString alloc]initWithFormat: @"%@%@%@", httpUrl, cityId, key];
-    NSURL *url = [NSURL URLWithString: urlStr];
+//    NSURL *url = [NSURL URLWithString: urlStr];
+//    
+//    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc]initWithURL: url
+//                                                                  cachePolicy: NSURLRequestUseProtocolCachePolicy
+//                                                              timeoutInterval: 10];
+//    [urlRequest setHTTPMethod: @"GET"];
+//    NSURLSession *session = [NSURLSession sharedSession];
+//    
+//    __block  NSString *result = @"";
+//    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        if (!error) {
+//            //没有错误，返回正确；
+//            result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//            NSDictionary *weatherDic = [NSJSONSerialization JSONObjectWithData:data
+//                                                                       options:NSJSONReadingMutableLeaves
+//                                                                         error:&error];
+//            self.cityWeather = [self convertToModelwithJSON:weatherDic];
+//            //更新UI
+//            [self setWeatherToUI];
+//            NSLog(@"%@", result);
+//        }
+//        else{
+//            //出现错误；
+//            NSLog(@"错误信息：%@",error);
+//        }
+//    }];
+//    
+//    [dataTask resume];
     
-    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc]initWithURL: url
-                                                                  cachePolicy: NSURLRequestUseProtocolCachePolicy
-                                                              timeoutInterval: 10];
-    [urlRequest setHTTPMethod: @"GET"];
-    NSURLSession *session = [NSURLSession sharedSession];
-    
-    __block  NSString *result = @"";
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (!error) {
-            //没有错误，返回正确；
-            result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            NSDictionary *weatherDic = [NSJSONSerialization JSONObjectWithData:data
-                                                                       options:NSJSONReadingMutableLeaves
-                                                                         error:&error];
-            self.cityWeather = [self convertToModelwithJSON:weatherDic];
-            //更新UI
-            [self setWeatherToUI];
-            NSLog(@"%@", result);
-        }
-        else{
-            //出现错误；
-            NSLog(@"错误信息：%@",error);
-        }
+
+    //    从URL获取json数据
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:urlStr parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        self.cityWeather = [self convertToModelwithJSON:responseObject];
+        //更新UI
+        [self setWeatherToUI];
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
     }];
-    
-    [dataTask resume];
 }
 
 //将请求返回JSON结果转为weatherModel
@@ -301,6 +312,7 @@ BOOL isOpenCell;
         }
 //        [self generateHourlyForecastView];
         [self.dailyForecastTableView reloadData];
+        [self.dailyForecastTableView.mj_header endRefreshing];
     });
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

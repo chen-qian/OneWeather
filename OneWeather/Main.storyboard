@@ -358,7 +358,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="450" id="uvR-1p-iJC"/>
                                 </constraints>
-                                <mutableString key="text">      1、"一个天气"提供的天气预报信息产品服务仅供用户作为生活、生产等活动的参考信息，用户据此作出的行为及所产生的后果与"一个天气"及其关联的单位无关。
+                                <string key="text">      1、"一个天气"提供的天气预报信息产品服务仅供用户作为生活、生产等活动的参考信息，用户据此作出的行为及所产生的后果与"一个天气"及其关联的单位无关。
 
       2、由于不可抗力或互联网传输原因等造成信息传播的延迟、中断和缺失，"一个天气"不承担任何责任。因不可预测或无法控制的系统故障、设备故障、通讯故障等原因给用户造成损失的，"一个天气"不承担任何的赔偿责任。
 
@@ -368,7 +368,7 @@
 
       5、本声明的最终解释权归本应用开发者所有。
 
-      以上风险提示，您已阅读并理解，如果继续使用，即表明您同意承担使用"一个天气" 所有服务可能存在的风险。</mutableString>
+      以上风险提示，您已阅读并理解，如果继续使用，即表明您同意承担使用"一个天气" 所有服务可能存在的风险。</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -472,7 +472,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="湿度 --%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX8-5u-Y5g" userLabel="Hum">
-                                <rect key="frame" x="281" y="254" width="71" height="22"/>
+                                <rect key="frame" x="260" y="254" width="71" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -485,7 +485,7 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="xjr-Pn-r0V" userLabel="hum_img">
-                                <rect key="frame" x="261" y="254" width="20" height="20"/>
+                                <rect key="frame" x="240" y="254" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="gbR-wq-t66"/>
                                     <constraint firstAttribute="width" constant="20" id="pvx-7B-hFB"/>
@@ -682,14 +682,14 @@
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="VyF-io-5cS">
-                                <rect key="frame" x="261" y="204" width="20" height="20"/>
+                                <rect key="frame" x="240" y="204" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="GFh-Z6-cBf"/>
                                     <constraint firstAttribute="width" constant="20" id="vlq-nJ-Nim"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空气质量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-9z-9Wt">
-                                <rect key="frame" x="281" y="203" width="68" height="21"/>
+                                <rect key="frame" x="260" y="203" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -727,7 +727,7 @@
                             <constraint firstItem="HwB-9z-9Wt" firstAttribute="leading" secondItem="VyF-io-5cS" secondAttribute="trailing" id="LUZ-ym-1Jl"/>
                             <constraint firstItem="Cp0-29-iW7" firstAttribute="centerX" secondItem="hHz-0j-9dg" secondAttribute="centerX" id="MyV-Zb-IKi"/>
                             <constraint firstItem="CX8-5u-Y5g" firstAttribute="leading" secondItem="KYy-zy-qV1" secondAttribute="trailing" constant="30" id="P3S-7H-Ze0"/>
-                            <constraint firstItem="CX8-5u-Y5g" firstAttribute="trailing" secondItem="Auh-IJ-9VB" secondAttribute="trailing" multiplier="0.85" id="PJH-Js-yTa"/>
+                            <constraint firstItem="CX8-5u-Y5g" firstAttribute="trailing" secondItem="Auh-IJ-9VB" secondAttribute="trailing" multiplier="0.8" id="PJH-Js-yTa"/>
                             <constraint firstItem="KYy-zy-qV1" firstAttribute="leading" secondItem="Auh-IJ-9VB" secondAttribute="leading" constant="70" id="SGD-MM-LWy"/>
                             <constraint firstItem="RW7-6Y-mf2" firstAttribute="leading" secondItem="Auh-IJ-9VB" secondAttribute="leadingMargin" constant="-20" id="TAj-e3-nOA"/>
                             <constraint firstAttribute="trailing" secondItem="FDK-Pn-AK0" secondAttribute="trailing" id="XAc-tj-Df0"/>

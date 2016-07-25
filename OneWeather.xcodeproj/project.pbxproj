@@ -92,6 +92,8 @@
 		04BA70131D2EDB37003CF9F4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = OneWeather/Info.plist; sourceTree = SOURCE_ROOT; };
 		04BF38B41D30351B00C86B9A /* OneWeather-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneWeather-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		04C0D9F51CFEE6D400CAAE66 /* OneWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CF2C381D45BAA9000DC47A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		04CF2C3A1D45BAB3000DC47A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8C8D19D92EE8597BF698F4A2 /* Pods-OneWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneWeather/Pods-OneWeather.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A723C44165A8401C2A4C83 /* Pods-OneWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneWeather/Pods-OneWeather.release.xcconfig"; sourceTree = "<group>"; };
 		DFCAD82801CDA1780AE2A31B /* libPods-OneWeather.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneWeather.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +259,8 @@
 		F7FA34ABA3F1EF7E158AB6C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04CF2C3A1D45BAB3000DC47A /* MobileCoreServices.framework */,
+				04CF2C381D45BAA9000DC47A /* SystemConfiguration.framework */,
 				DFCAD82801CDA1780AE2A31B /* libPods-OneWeather.a */,
 			);
 			name = Frameworks;

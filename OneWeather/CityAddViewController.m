@@ -248,7 +248,7 @@
     if (status) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 
-        CityCell *cell = [_cityTableView cellForRowAtIndexPath:indexPath];
+        CityCell *cell = [self.cityTableView cellForRowAtIndexPath:indexPath];
         _indicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(40, cell.frame.size.height/2-10, 20, 20)];
         [cell addSubview:_indicator];
         

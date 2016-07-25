@@ -21,3 +21,6 @@
 #define NSLog(...)
 #define debugMethod()
 #endif
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
